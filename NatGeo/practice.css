@@ -1,0 +1,22 @@
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 500px;
+    background-color: grey;
+}
+
+.flex-element{
+    background-color: aqua;
+    border: 1px solid yellow;
+    padding: 10px;
+    height: 50px;
+}
+
+.flex-second-level{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}

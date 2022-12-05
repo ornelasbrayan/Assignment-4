@@ -1,0 +1,44 @@
+header.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    background-color: yellowgreen;
+}
+
+header .flex-image{
+    background-color: blueviolet;
+    height: 50px;
+    width: 20%;
+}
+
+main.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+}
+
+main.flex-container .list-container{
+    background-color: bisque;
+    height: 400px;
+    width: 50%;
+    display: flex;
+}
+
+main.flex-container .text-container{
+    background-color: brown;
+    height: 400px;
+    width: 50%;
+    display: flex;
+}
+
+main .flex-image{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}

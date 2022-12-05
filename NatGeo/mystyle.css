@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body{
+    background-color: black;
+    color: white;
+
+
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+img{
+    min-width: 100%;
+
+}
+
+/*utilities*/
+@media(min-width:768px){
+    main{
+        width: 1200px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+/*nav menu*/
+
+nav.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: 35px;
+    padding: 8px 17px;
+}
+
+nav.menu a{
+    margin-right: 20px;
+}
+
+.logo-frame{
+    height: 32px;
+}
+
+.logo-complete{
+    display: none;
+}
+
+.link-login{
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: bold;
+    
+    
+
+}
+
+.link-search{
+    display: none;
+}
+
+.link-news{
+    display: none;
+}
+
+.link-subs{
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: white!important;
+    background-color: black;
+    padding: 16px;
+    background: linear-gradient(to left, black 50%, rgb(255, 206,00) 50%) right;
+    background-size: 200%;
+    transition: .2s ease-out;
+
+
+}
+
+.link-subs:hover{
+    color: black!important;
+    background-color: rgb(255,206,00);
+    background-position: left;
+    
+    
+}
+
+.link-menu{
+    display: none;
+}
+
+.link-arrows{
+    
+
+}
+
+/* header */
+
+
+header{
+    height: 160px;
+    text-align: center;
+    padding: 50px;
+
+
+}
+
+h1{
+    font-size: 43px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-bottom: 15px;
+}
+
+.subs{
+    color: white;
+    border-bottom: 2px solid rgb(255, 206,00);
+    background: linear-gradient(to bottom, black 50%, rgb(255, 206,00) 50%) top;
+    background-size: 100% 200%;
+    transition: .1s ease-out;
+
+}
+
+.subs:hover{
+    background-color: rgb(255, 206,00);
+    background-position: bottom;
+    color: black!important;
+
+}
+
+.line{
+    color: rgb(255,206,00);
+    font-size: 80px;
+    margin-top: -45px;
+}
+
+/* news */
+@media (min-width: 768px){
+    main{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+
+    }
+}
+/* secondary news */
+@media (min-width: 768px){
+    .secondary-news-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+
+    }
+}
+
+main, .todays-pick-container{
+    margin: 0 auto;
+    width: 95%;
+}
+
+.main-news{
+    position: relative; /*parent*/
+}
+
+.main-news-img{
+
+}
+
+.main-news-text{
+    position: absolute;
+    top: 180px;
+    left: 20px;
+}
+
+.main-news-text h2{
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.main-news-text p{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.main-news-text a{
+    font-size: 12px;
+    color: white;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+
+.secondary-news{
+    margin: 20px 0px
+
+}
+
+.secondary-news-img {
+    width: 100%;
+    height: 300px;
+}
+
+.secondary-news-text{
+    background-color: white;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.secondary-news-text2{
+    background-color: white;
+    margin-top: 15px;
+    padding: 20px;
+}
+
+
+.secondary-news-text h2{
+    font-size: 12px;
+    color: black;
+    text-transform: uppercase;
+    color: gray;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.secondary-news-text2 h2{
+    font-size: 12px;
+    color: black;
+    text-transform: uppercase;
+    color: gray;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+
+.secondary-news-text p{
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.secondary-news-text2 p{
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+
+.secondary-news-text a{
+    font-size: 12px;
+    color: black;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.todays-pick-container h3{
+    border-left: 5px solid rgb(255, 206,00);
+    margin-left: 5px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.todays-pick{
+    display: flex;
+}
+
+.todays-pick img{
+    min-width: 90px;
+    height: 90px;
+    margin-left: 5px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.todays-pick-text h2{
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.todays-pick-text p{
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.todays-pick-text a{
+    color:white;
+}
+
+.todays-pick-text a:hover{
+    text-decoration: underline;
+}
+
+.seemore{
+    margin-left: 205px;
+    margin-right: 205px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 3px;
+    border-bottom: 2px solid rgb(255, 206,00);
+    background: linear-gradient(to bottom, black 50%, rgb(255, 206,00) 50%) top;
+    background-size: 100% 200%;
+    transition: .1s ease-out;
+
+}
+
+.seemore:hover{
+    background-color: rgb(255, 206,00);
+    background-position: bottom;
+    color: black!important;
+}
+
+
+
+
